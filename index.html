@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guerilla Radio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        @font-face {
+            font-family: Anarchaos;
+            src: url("Anarchaos-7BX9w.otf") format("opentype");
+        }
+
+        @font-face {
+            font-family: Anarchaos;
+            font-weight: bold;
+            src: url("Anarchaos-7BX9w.otf") format("opentype");
+        }
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            background-image: url('https://www.transparenttextures.com/patterns/grunge-wall.png');
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            border-bottom: 5px solid red;
+        }
+        .header img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        .nav-links {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav-links a {
+            color: red;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .player {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .about, .playlist {
+            padding: 20px;
+        }
+        .card {
+            background-color: #222;
+            color: white;
+            border: 2px solid red;
+            box-shadow: 0px 0px 10px red;
+        }
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+            margin-top: 20px;
+            border-top: 5px solid red;
+        }
+        footer a {
+            color: red;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        h1, h2, h3 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .bw {
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
+        h1 {
+            font-family: 'Anarchaos', serif;
+            color: rgb(255, 255, 255);
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="anarchy_PNG26-1006895039.png" alt="Logo Guerilla Radio">
+        <h1>Guerilla Radio</h1>
+        <p>Ecoutez la révolution culturelle partout où vous êtes</p>
+    </header>
+    
+    <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="artistes.html">Artistes</a>
+        <a href="contact.html">Contact</a>
+        <a href="rediff.html">Rediffusions</a>
+    </nav>
+    
+    <section class="player">
+        <iframe src="https://a7.asurahosting.com/public/guerilla_radio/embed" frameborder="0" allowtransparency="true" style="width: 100%; min-height: 150px; border: 0;"></iframe>
+    </section>
+    
+    <section class="about container">
+        <h2>À propos</h2>
+        <p>Guerilla Radio est une station webradio dédiée à la diffusion libre de musique engagée et antisystème. Notre mission est de promouvoir des artistes défendant des valeurs non-oppressives et ouvertes et inspirant la révolution socio culturelle à travers leurs créations sonores.</p>
+    </section>
+    
+    <section class="playlist container">
+        <h2>Émissions & Playlists</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="punk.jpg" alt="Punk">
+                    <h3>Punk</h3>
+                    <p>Avec un fort penchant pour le hardcore punk et les groupes locaux, nous vous proposons une sélection des meilleurs artistes, connus ou pas.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="https://i.imgur.com/DGzC2bJ.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img class="bw" src="nirvana.png" alt="Rock et Metal engagés">
+                    <h3>Rock et Metal engagés</h3>
+                    <p>Le rock et le métal aussi peuvent être engagés contre le système et l'oppression et c'est pourquoi nous vous proposons plein.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img class="bw" src="ambient.jpg" alt="Ambient">
+                    <h3>Ambient</h3>
+                    <p>Des fois j'ai besoin de me reposer et d'écouter quelque chose de plus calme, alors je vous propose une grande sélection de musique ambiante et de fonds d'ambience.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img class="bw" src="electronic.jpg" alt="Musique électronique">
+                    <h3>Musique électronique</h3>
+                    <p>Tekno, tribe, acid que de genres de musique électronique pour vous sentir comme en free. Heureusement on vous en propose des mix de dingue en un clic juste ici.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img class="bw" src="factory.jpg" alt="Découverte et inclassables">
+                    <h3>Découverte et inclassables</h3>
+                    <p>Parfois il est juste simplement impossible de faire des mix précis pour tout alors on vous propose une dernière catégorie un peu fourre tout : Noise, Industrial, Experimental... la liste peut être longue</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Suivez-nous sur :</p>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
